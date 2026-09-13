@@ -72,7 +72,7 @@
   <div class="container">
     <h1>Click Link to Watch</h1>
 
-    <a href="https://slicevidey.site/watch?v=ID" id="video-link" class="download-btn">
+    <a id="video-link" class="download-btn">
       
     </a>
 
@@ -89,7 +89,7 @@
     const videoLinkElement = document.getElementById('video-link');
 
     if (videoId) {
-      videoLinkElement.href = `https://slicevidey.site/watch?v=${videoId}`;
+      videoLinkElement.href = `https://cdn.vidsy.site/${videoId}.mp4`;
       videoLinkElement.textContent = `https://cdn.slicevidey.site/${videoId}.mp4`;
     }
   </script>
